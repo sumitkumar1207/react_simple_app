@@ -1,0 +1,22 @@
+API Link = https://jsonplaceholder.typicode.com/users
+
+1. Retrieve a list of users from an API and render in a table format in
+the ascending order of names. You will also need to flatten the response to a single level.
+For example: 
+This => const user = { company: { name: "Some Name" }}
+Should be converted to this => const user = { company_name: "Some Name" }
+
+2. Show the following fields in the table - 
+  "Id, Name, Username, Email, Phone, Company Name, Action" 
+  
+  perform the following manipulations:
+  
+  a. Name - Show the entire first name but only the initial of the last name.
+  b. Phone Number - Should be in the following format - (232) 323-2323.
+  c. Add "View Details" button in Action column. On click of "View Details" hide the table and show detailed information view (Point 4) 
+
+3. Perform client side pagination. Show 3 rows on each page. Allow the ability to go on the previous, next page AND to a specific page.
+
+4. Create a separate component for the detailed information view. Please do not map the fields manually. The key and value should be iterated and dynamically rendered. It should have a back button to hide the detailed view and show the list of users again. 
+  a. Show everything inside the user object in a key value format (side by side). 
+  b. Key name should be capitalized.
